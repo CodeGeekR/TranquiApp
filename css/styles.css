@@ -151,7 +151,7 @@ body {
 .card-title {
   color: black; /* Color de texto */
   font-weight: bold; /* Texto en negrita */
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -163,6 +163,10 @@ body {
 /* Estilo para los enlaces en los títulos de las tarjetas al pasar el mouse por encima */
 .card-body .card-title a:hover {
   color: #209d8a; /* Color de texto al pasar el mouse por encima (naranja suave) */
+}
+
+.card-body p {
+  font-size: 15px;
 }
 
 /* Estilo para la imagen del card */
