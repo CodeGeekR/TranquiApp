@@ -1,0 +1,277 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de la página de inicio */
+.landing-section {
+  background: url('/img/top-view-smiley-sad-faces-blue-monday-with-copy-space.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #092D51;
+}
+
+.landing-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing-section p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.landing-section .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: #1469BD;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Estilos de los formularios */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos de las tarjetas */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden; /* Oculta cualquier contenido que se salga de los bordes del card */
+}
+
+.card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la animación al hacer clic en la tarjeta (solo en dispositivos móviles) */
+@media (hover: none) {
+  .card:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los enlaces en los títulos de las tarjetas */
+.card-title {
+  color: black; /* Color de texto */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-body .card-title a {
+  color: #0c0c0c; /* Color de texto */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilo para los enlaces en los títulos de las tarjetas al pasar el mouse por encima */
+.card-body .card-title a:hover {
+  color: #209d8a; /* Color de texto al pasar el mouse por encima (naranja suave) */
+}
+
+/* Estilo para la imagen del card */
+.card-img-top {
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave al transformar la imagen */
+  transform-origin: center; /* La transformación se origina desde el centro de la imagen */
+}
+
+/* Estilo para la imagen del card cuando el usuario pasa el mouse sobre ella */
+.card-img-top:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+}
+
+
+/* Estilos de animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-animation {
+  animation: scroll 1s ease-in-out;
+}
+
+/* Estilos adicionales */
+/* Animacion de texto del H1 en el homepage */
+
+@keyframes color {
+  100% { color: rgb(25, 25, 63); }
+}
+
+#animated-text {
+  animation: color 5s infinite;
+}
+
+#cursor {
+  animation: color 1s infinite;
+}
+
+/* Estilos para el carrousel */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(128, 128, 128, 0.5); /* Gris transparente */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  width: 5%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+/* Animacion Boton */
+/* Estilo para el botón */
+.btn-primary {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Estilo para el botón al pasar el mouse por encima o al enfocarlo */
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #ff6a00; /* Nuevo color de fondo */
+  border-color: #007bff; /* Nuevo color de borde */
+}
+
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #1469BD;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.footer .social-icons {
+  display: flex;
+  list-style: none;
+}
+
+.footer .social-icons li {
+  margin-right: 10px;
+}
+
+.footer .social-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer .social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
