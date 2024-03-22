@@ -41,5 +41,3 @@ TranquiApp
 3. Explora las funcionalidades de la aplicación y sigue las instrucciones en pantalla.
 
 ¡Disfruta de TranquiApp y cuida tu salud mental y bienestar emocional!
-
-Este archivo está intencionalmente en blanco.
